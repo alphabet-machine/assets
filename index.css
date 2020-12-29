@@ -1,0 +1,51 @@
+:root{
+	--bkg: #ffffff;
+    --font-color: #000000;
+    --line: "|";
+    --lr-color: #000000;
+    --lr-width: 15%;
+    --t-color: #292929;
+    --t-height: 43.75px;
+}
+
+body{
+    margin-top: calc(var(--t-height) + 31.26px);
+	text-align: center;
+    background-color: var(--bkg);
+    color: var(--font-color);
+}
+
+p.welcome{
+    font-size: xx-large;
+    font-weight: 900;
+    text-decoration: underline overline;
+}
+
+p.welcome:before, p.welcome:after{
+    content: var(--line);
+}
+
+div.l, div.r{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-color: var(--lr-color);
+    width: var(--lr-width);
+}
+
+div.l{
+    left: 0;
+}
+
+div.r{
+    right: 0;
+}
+
+div.t{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: var(--t-color);
+    height: var(--t-height);
+}
